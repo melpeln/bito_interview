@@ -14,5 +14,17 @@ class Kata:
             if int(num) < min:
                 min = int(num)
         print(f"{min} {max}")
+    
+    def ArrayDiff(list1, list2):
+        list_temp = list1
+        for elem2 in list2:
+            for elem1 in list1:
+                if elem2 == elem1:
+                    list1.remove(elem1)
+        return list1
+                
+
 
 Kata.HighAndLow(inp="1 2 3 4 5")
+ans = Kata.ArrayDiff(list1=[1, 2, 3, 4, 5], list2=[0, -9, 3])
+print(ans)
