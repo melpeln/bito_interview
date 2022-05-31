@@ -16,7 +16,6 @@ class Kata:
         print(f"{min} {max}")
     
     def ArrayDiff(list1, list2):
-        list_temp = list1
         for elem2 in list2:
             for elem1 in list1:
                 if elem2 == elem1:
